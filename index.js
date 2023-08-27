@@ -38,13 +38,7 @@ add.addEventListener('click', (event) => {
         return;
 
     }
-    if (task.value.length > 15) {
 
-        err.textContent = 'Input is too lengthy!';
-        err.style.color = 'red'
-        return;
-
-    }
     let element = document.createElement('li')
     element.innerHTML = `<span>${task.value}</span><span>✖</span>`
     element.firstElementChild.addEventListener('click', check)

@@ -47,10 +47,20 @@ li span:last-child {
 
 }
 
+li span:first-child {
+
+    display: inline-block;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
 .check:before {
     content: "✔";
     float: left;
-    margin-left: 20px;
+    margin-right: 15px;
 }
 
 input {
