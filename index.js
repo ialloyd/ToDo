@@ -1,6 +1,6 @@
 const task = document.querySelector('input');
 const add = document.querySelector('#add');
-const reset = document.querySelector('#clear');
+const resetInput = document.querySelector('#clear');
 const list = document.querySelector('ul');
 const items = document.querySelectorAll('li');
 const err = document.querySelector('p');
@@ -55,4 +55,7 @@ add.addEventListener('click', (event) => {
 
 arr.forEach(item => item.children[0].addEventListener('click', check));
 arr.forEach(item => item.children[1].addEventListener('click', discard))
-reset.addEventListener('click', () => { task.value = '' });
+resetInput.addEventListener('click', (event) => {
+    event.preventDefault();
+    task.value = '';
+});
